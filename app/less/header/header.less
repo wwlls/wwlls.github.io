@@ -1,0 +1,41 @@
+.headerDiv{
+	background-color: #fff;
+	width: 100%;
+	margin: 0 auto;
+	& .header{
+		clear: both;
+		overflow: hidden;
+		& .logo{
+			float: left;
+			padding: 25px 0;
+			margin-left: 120px;
+			& img{
+				width: 200px;
+				height: 46px;
+			}
+		}
+		& .nav{
+			float: left;
+			margin-left: 280px;
+			& ul li{
+				float: left;
+				width: 120px;
+				text-align: center;
+				height: 100px;
+				line-height: 101px;
+				& a{
+					font-size: 14px;
+					color: #333;
+					text-decoration: none;
+					display: inline-block;
+					width: 100%;
+					vertical-align: top;
+					&.active{
+						background-color: #D0011B;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

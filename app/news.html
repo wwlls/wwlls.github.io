@@ -1,0 +1,52 @@
+<div class="news">
+	<div class="notice">
+		<img src="images/notice.jpg">
+	</div>
+
+	<div class="newsMain">
+		<div class="newsMainImg">
+			<div ng-controller="Carousel" class="banner">
+			  <carousel interval="myInterval" no-wrap="noWrapSlides">
+			    <slide ng-repeat="slide in slidesNews" active="slide.active">
+			      <img ng-src="{{slide.image}}" style="margin:auto;">
+			      <div class="carousel-caption">
+              <p>{{slide.text}}</p>
+            </div>
+			    </slide>
+			  </carousel>
+			</div>
+		</div>
+		<div class="newsMainSize" ng-controller="newSize">
+			<h1>
+				<span>News</span>
+				<b>新闻资讯</b>
+			</h1>
+			<ul>
+				<li ng-repeat="size in news">
+					<h4>{{size.title}}</h4>
+					<h5>{{size.time}}</h5>
+					<p>{{size.explain}}</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="container"  ng-controller="Pages">
+		<div class="waterfall">
+			<div class="pin" ng-repeat="list in lists | paging:currentPage * pageSize | limitTo:pageSize">
+				<h1>{{list.title}}</h1>
+				<h5>{{list.time}}</h5>
+				<img ng-src="{{list.imgNews}}" />
+				<p>
+					{{list.explain}}
+				</p>
+				<a href="javascript:;">查看详情 ></a>
+			</div>
+			<div class="pagebar">
+        <button class="btn-info" type="button" ng-disabled="currentPage == 0" ng-click="currentPage = currentPage - 1">上一页</button>
+        <span><i>{{currentPage + 1}}</i> / {{pageNum()}}</span>
+        <button class="btn-info" type="button" ng-disabled="currentPage == pageNum() - 1" ng-click="currentPage = currentPage + 1">下一页</button>
+    </div>
+		</div>
+	</div>
+</div>

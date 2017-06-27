@@ -1,0 +1,41 @@
+<div class="recruit">
+	<div class="notice">
+		<img src="images/noticeSize.png">
+		<div class="posLeft">
+			人才理念
+		</div>
+		<div class="posRight">
+			<ul>
+				<li>.德才兼备、尚贤用能、高效高薪</li>
+				<li>.诚信务实、阳光坦诚</li>
+				<li>.团队协作、互助互赢</li>
+				<li>.努力向前、不断提升</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="mainHead">
+			<h4>社会招聘</h4>
+			<h5><span></span>Stratage</h5>
+		</div>
+		<div class="mainTable">
+			<table cellspacing="0" ng-controller="recruitTable">
+				<tr>
+					<th>招聘职位</th>
+					<th>招聘部门</th>
+					<th>工作地点</th>
+					<th>发布日期</th>
+					<th>职位申请</th>
+				</tr>
+				<tr ng-repeat="recruit in table">
+					<td><b>{{recruit.name}}</b></td>
+					<td>{{recruit.company}}</td>
+					<td>{{recruit.region}}</td>
+					<td>{{recruit.date}}</td>
+					<td><a href="javascript:;">{{recruit.apply}}</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

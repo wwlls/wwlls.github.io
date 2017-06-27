@@ -1,0 +1,58 @@
+.banner{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	& .carousel-indicators{
+		bottom: 10px;
+		& li{
+			width: 40px;
+	    height: 4px;
+	    display: inline-block;
+	    border-radius: 0;
+	    background: #fff;
+	    opacity: .5;
+	    margin: 0 0 0 10px;
+	    &.active{
+	    	width: 40px;
+		    height: 4px;
+		    display: inline-block;
+		    border-radius: 0;
+		    background: #fff;
+		    opacity: 1;
+	    }
+		}
+	}
+	& .carousel-control{
+		position: static;
+		& .glyphicon-chevron-left,.glyphicon-chevron-right{
+			display: none;
+		}
+	}
+	& .project{
+		position: absolute;
+		bottom: 60px;
+		left: 27%;
+		z-index: 9;
+		& ul li{
+			background-color: #fff;
+			width: 180px;
+			float: left;
+			margin-right: 60px;
+			& a{
+				display: inline-block;
+				width: 100%;
+				padding: 17.5px 0;
+				&:hover{
+					background-color: rgba(0, 0, 0, 0.2)
+				}
+				&:active{
+					background-color: rgba(0, 0, 0, 0.2)
+				}
+				& img{
+					height: 42px;
+				}
+			}
+		}
+	}
+}
