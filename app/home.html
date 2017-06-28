@@ -1,0 +1,36 @@
+<!-- <div class="banner">
+	<div class="swiper-container borderNo">
+	  <div class="swiper-wrapper" ng-controller="bannerImg">
+	    <div class="swiper-slide" ng-repeat="bannerImg in img">
+	    	<img ng-src="{{bannerImg.imageUrl}}" />
+	    </div>
+	  </div>
+	  <div class="swiper-pagination"></div>
+	  <div class="project">
+			<ul>
+				<li>
+					<a href="javascript:;"><img src="images/projectOne.png"></a>
+				</li>
+				<li><a href="javascript:;"><img src="images/projectTwo.png"></a></li>
+				<li><a href="javascript:;"><img src="images/projectThere.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</div> -->
+<div ng-controller="Carousel" class="banner">
+	<link rel="stylesheet" type="text/css" href="styles/common/banner.css">
+  <carousel interval="myInterval" no-wrap="noWrapSlides">
+    <slide ng-repeat="slide in slides" active="slide.active">
+      <img ng-src="{{slide.image}}" style="margin:auto;">
+    </slide>
+  </carousel>
+  <div class="project">
+		<ul>
+			<li ng-repeat="projectList in projectLists">
+				<a href="javascript:;" ng-click="goImages(projectList)">
+					<img ng-src="{{projectList.images}}">
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
