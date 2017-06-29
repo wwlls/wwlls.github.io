@@ -15,51 +15,50 @@
 		</ul>
 	</div>
 </div> -->
-<div  class="home">
-	<div class="homeMain">
+<div  class="home" ng-controller="personalSize">
+	<div class="homeMain personal">
 		<h5>基本信息</h5>
 		<ul>
-			<li>
-				<label>性名：</label>
-				<span>危文亮</span>
-			</li>
-			<li>
-				<label>性别：</label>
-				<span>男</span>
-			</li>
-			<li>
-				<label>出生：</label>
-				<span>1992年</span>
-			</li>
-			<li>
-				<label>Tel：</label>
-				<span><a href="tel://13666606473">13666606473</a></span>
-			</li>
-			<li>
-				<label>Email：</label>
-				<span>121048014@qq.com</span>
-			</li>
-			<li>
-				<label>政治面貌：</label>
-				<span>团员</span>
-			</li>
-			<li>
-				<label>婚姻状况：</label>
-				<span>否</span>
-			</li>
-			<li>
-				<label>教育程度：</label>
-				<span>大专</span>
-			</li>
-			<li>
-				<label>现居住地：</label>
-				<span>杭州滨江</span>
-			</li>
-			<li>
-				<label>到岗时间：</label>
-				<span>待定</span>
+			<li ng-repeat="size in personal">
+				<label>{{size.label}}</label>
+				<span>{{size.span}}</span>
 			</li>
 		</ul>
 	</div>
-		
+
+	<div class="homeMain">
+		<h5>教育经历</h5>
+		<ul>
+			<li ng-repeat="size in education">
+				<label>{{size.label}}</label>
+				<span>{{size.span}}</span>
+			</li>
+		</ul>
+	</div>
+	<div class="homeMain">
+		<h5>自我描述</h5>
+		<ul>
+			<li>1.熟练使用rem，百分比，rem实现移动端、pc端响应式布局。</li>
+			<li>2.熟练使用html5+css3.0新标签新属性实现页面布局与效果。</li>
+			<li>3.熟练使用各种插件来达到页面效果与交互。</li>
+			<li>4.熟练使用JavaScript完成业务逻辑及判断。</li>
+			<li>5.熟练使用ajax实现前后数据交互。</li>
+			<li>6.熟练使用swiper、echarts等框架。</li>
+			<li>7.熟练使用reactjs实现组件化开发，运用react-router实现为项目，了解react-redux。</li>
+			<li>8.熟练使用webpack对react代码进行模块化。</li>
+			<li>9.熟练使用gulp+browserrify实现代码模块化、热编译。</li>
+			<li>10.了解grunt编译流程。</li>
+			<li>11.熟练使用less预处理工具编译成css。</li>
+			<li>12.熟练使用github，将项目放入github仓库，了解github流程。</li>
+			<li>12.熟练使用angularjs1，并实现为项目。</li>
+			<li>13.了解angular-cli，实现demo。</li>
+		</ul>
+	</div>
+	<div class="homeMain">
+		<h5>爱好</h5>
+		<ul>
+			<li>1.喜欢打篮球，酷爱看NBA。</li>
+			<li>2.喜欢打电竞游戏（团队协作）。</li>
+		</ul>
+	</div>
 </div>

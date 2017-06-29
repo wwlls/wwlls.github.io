@@ -13,14 +13,14 @@ App.config(function($stateProvider, $urlRouterProvider){
         url: '/project',
         templateUrl: '/project.html',
         controller: function(){
-            document.title = 'project'
+            document.title = '项目经验'
         }
     })
     .state('technology',{
         url: '/technology',
         templateUrl: 'technology.html',
         controller: function(){
-            document.title = 'technology'
+            document.title = '技术分享'
         }
     })
     .state('news',{
@@ -91,7 +91,7 @@ App.controller('Carousel', function ($scope) {
     };
     $scope.addSlideNews(); 
 
-    //项目广告图片
+//项目广告图片
     $scope.projectLists =[
         {images : 'images/projectOne.png'},
         {images : 'images/projectTwo.png'},
@@ -107,6 +107,63 @@ App.controller('Carousel', function ($scope) {
             window.location.href = 'https://www.xian62.com/'
         }
     };
+});
+
+//个人资料
+App.controller('personalSize', function ($scope) {
+    $scope.personal = [
+        {
+            label: '姓名：', 
+            span: '危文亮', 
+        }, 
+        {
+            label: '性别：', 
+            span: '男', 
+        },
+        {
+            label: '出生：', 
+            span: '1992年', 
+        },
+        {
+            label: '教育程度：', 
+            span: '大专', 
+        },
+        {
+            label: 'Tel：', 
+            span: '13666606473',
+        },
+        {
+            label: 'Email：', 
+            span: '121048014@qq.com', 
+        },
+        {
+            label: '婚姻状况：', 
+            span: '否', 
+        },
+        {
+            label: '现居住地：', 
+            span: '杭州滨江', 
+        },
+        {
+            label: '到岗时间：', 
+            span: '待定', 
+        }
+
+    ];
+    $scope.education = [
+        {
+            label: '学校：',
+            span: '武汉软件工程职业技术学院'
+        },
+        {
+            label: '时间：',
+            span: '201009-201307'
+        },
+        {
+            label: '专业：',
+            span: '软件开发'
+        }
+    ]
 });
 
 // App.controller('bannerImg', function ($scope) {

@@ -1,24 +1,26 @@
-$(window).scroll(function(){
-	if($(window).scrollTop() > 0){
-		$('.headerDiv').css({
-			'position' : 'fixed',
-			'top' : '0',
-			'z-index' : '99'
-		})
-		$('.mainHeaderTop').css({
-			'margin-top' : '100px'
-		})
-	} else{
-		$('.headerDiv').css({
-			'position' : 'static',
-			'top' : '0',
-			'z-index' : '99'
-		})
-		$('.mainHeaderTop').css({
-			'margin-top' : '0'
-		})
-	}
-});
+// $(window).scroll(function(){
+// 	if($(window).scrollTop() > 0){
+// 		$('.headerDiv').css({
+// 			'position' : 'fixed',
+// 			'top' : '0',
+// 			'z-index' : '99',
+// 			'background' : '#fff',
+// 		})
+// 		$('.mainHeaderTop').css({
+// 			'margin-top' : '100px'
+// 		})
+// 	} else{
+// 		$('.headerDiv').css({
+// 			'position' : 'static',
+// 			'top' : '0',
+// 			'z-index' : '99',
+// 			'background' : 'none'
+// 		})
+// 		$('.mainHeaderTop').css({
+// 			'margin-top' : '0'
+// 		})
+// 	}
+// });
 // $(window).on('load',function(){
 // 	 clearBorder();
 // })

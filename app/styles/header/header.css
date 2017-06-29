@@ -1,4 +1,5 @@
 .headerDiv{
+	width: 100%;
 }
 .header{
 	max-width: 15.0rem;
@@ -28,11 +29,14 @@
 	color: #666;
 	font-size: 0.25rem;
 	text-decoration: none;
-	height: 0.5rem;
-	line-height: 0.5rem;
-	width: 1.575rem;
+	height: 0.575rem;
+	line-height: 0.575rem;
+	width: 1.375rem;
 	text-align: center;
 	display: inline-block;
 	border-radius: 0.125rem;
 	margin-left: 0.125rem;
+}
+.nav ul li a.active{
+	color: #cc9900;
 }
