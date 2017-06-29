@@ -6,21 +6,21 @@ App.config(function($stateProvider, $urlRouterProvider){
         url: '/home',
         templateUrl: 'home.html',
         controller: function(){
-            document.title = '支氏控股集团'
+            document.title = '个人资料'
         }
     })
-    .state('group',{
-        url: '/group',
-        templateUrl: '/group.html',
+    .state('project',{
+        url: '/project',
+        templateUrl: '/project.html',
         controller: function(){
-            document.title = '集团概况'
+            document.title = 'project'
         }
     })
-    .state('corporate',{
-        url: '/corporate',
-        templateUrl: 'corporate.html',
+    .state('technology',{
+        url: '/technology',
+        templateUrl: 'technology.html',
         controller: function(){
-            document.title = '企业文化'
+            document.title = 'technology'
         }
     })
     .state('news',{

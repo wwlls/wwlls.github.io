@@ -1,0 +1,17 @@
+.home{
+	max-width: 15.0rem;
+	min-width: 5.0rem;
+	margin: 0.28125rem auto;
+}
+.home .homeMain h5{
+	background-color: #eee;
+	font-size: 0.21875rem;
+	color: #333;
+	padding: 0.125rem 0.4375rem;
+}
+.home .homeMain ul{
+	margin: 0.25rem 0;
+}
+.home .homeMain ul li{
+	line-height: 0.375rem;
+}
