@@ -27,7 +27,7 @@ App.config(function($stateProvider, $urlRouterProvider){
         url: '/news',
         templateUrl: 'news.html',
         controller: function(){
-            document.title = '新闻中心'
+            document.title = '技术分享'
         }
     })
     .state('recruit',{
@@ -42,6 +42,13 @@ App.config(function($stateProvider, $urlRouterProvider){
 App.controller('Header', function($scope){
   $scope.goHref = function(){
    window.location.hash = '/home'
+  }  
+})
+
+App.controller('Header1', function($scope){
+  $scope.goHref1 = function(){
+    alert(11)
+   window.location.hash = '/news'
   }  
 })
 
