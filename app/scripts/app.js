@@ -99,22 +99,22 @@ App.controller('Carousel', function ($scope) {
     $scope.addSlideNews(); 
 
 //项目广告图片
-//     $scope.projectLists =[
-//         {images : 'images/projectOne.png'},
-//         {images : 'images/projectTwo.png'},
-//         {images : 'images/projectThere.png'}
-//     ]
-//     $scope.goImages = function(projectList){
-//         if(projectList.images === 'images/projectOne.png'){
-//             window.location.href = 'https://www.huayingdai.net/'
-//         }else if(projectList.images === 'images/projectTwo.png'){
-//             window.location.href = 'http://www.huayingbaolicai.com/'
-//         }
-//         else if(projectList.images === 'images/projectThere.png'){
-//             window.location.href = 'https://www.xian62.com/'
-//         }
-//     };
-// });
+    $scope.projectLists =[
+        {images : 'images/projectOne.png'},
+        {images : 'images/projectTwo.png'},
+        {images : 'images/projectThere.png'}
+    ]
+    $scope.goImages = function(projectList){
+        if(projectList.images === 'images/projectOne.png'){
+            window.location.href = 'https://www.huayingdai.net/'
+        }else if(projectList.images === 'images/projectTwo.png'){
+            window.location.href = 'http://www.huayingbaolicai.com/'
+        }
+        else if(projectList.images === 'images/projectThere.png'){
+            window.location.href = 'https://www.xian62.com/'
+        }
+    };
+});
 
 //个人资料
 App.controller('personalSize', function ($scope) {
@@ -198,13 +198,13 @@ App.controller('personalSize', function ($scope) {
 //     }, 100);
 // });
 //项目图片
-// App.controller('projectImg', function ($scope) {
-//     $scope.img = [
-//         {imageUrl: 'images/projectOne.png'}, 
-//         {imageUrl: 'images/projectTwo.png'}, 
-//         {imageUrl: 'images/projectThere.png'}
-//     ];
-// });
+App.controller('projectImg', function ($scope) {
+    $scope.img = [
+        {imageUrl: 'images/projectOne.png'}, 
+        {imageUrl: 'images/projectTwo.png'}, 
+        {imageUrl: 'images/projectThere.png'}
+    ];
+});
 //新闻中心
 App.controller('newSize', function ($scope) {
     $scope.news = [
