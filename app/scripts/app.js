@@ -9,13 +9,6 @@ App.config(function($stateProvider, $urlRouterProvider){
             document.title = '个人资料'
         }
     })
-    .state('experience',{
-        url: '/experience',
-        templateUrl: '/experience.html',
-        controller: function(){
-            document.title = '项目经验'
-        }
-    })
     .state('technology',{
         url: '/technology',
         templateUrl: 'technology.html',
