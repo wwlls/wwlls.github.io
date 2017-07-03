@@ -23,11 +23,11 @@ App.config(function($stateProvider, $urlRouterProvider){
             document.title = '技术分享'
         }
     })
-    .state('recruit',{
-        url: '/recruit',
-        templateUrl: 'recruit.html',
+    .state('experience',{
+        url: '/experience',
+        templateUrl: 'experience.html',
         controller: function(){
-            document.title = '人才招聘'
+            document.title = '项目经验'
         }
     })
 })
