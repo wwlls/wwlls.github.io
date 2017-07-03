@@ -198,13 +198,13 @@ App.controller('personalSize', function ($scope) {
 //     }, 100);
 // });
 //项目图片
-App.controller('projectImg', function ($scope) {
-    $scope.img = [
-        {imageUrl: 'images/projectOne.png'}, 
-        {imageUrl: 'images/projectTwo.png'}, 
-        {imageUrl: 'images/projectThere.png'}
-    ];
-});
+// App.controller('projectImg', function ($scope) {
+//     $scope.img = [
+//         {imageUrl: 'images/projectOne.png'}, 
+//         {imageUrl: 'images/projectTwo.png'}, 
+//         {imageUrl: 'images/projectThere.png'}
+//     ];
+// });
 //新闻中心
 App.controller('newSize', function ($scope) {
     $scope.news = [
