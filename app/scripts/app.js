@@ -9,9 +9,9 @@ App.config(function($stateProvider, $urlRouterProvider){
             document.title = '个人资料'
         }
     })
-    .state('project',{
-        url: '/project',
-        templateUrl: '/project.html',
+    .state('experience',{
+        url: '/experience',
+        templateUrl: '/experience.html',
         controller: function(){
             document.title = '项目经验'
         }
@@ -99,22 +99,22 @@ App.controller('Carousel', function ($scope) {
     $scope.addSlideNews(); 
 
 //项目广告图片
-    $scope.projectLists =[
-        {images : 'images/projectOne.png'},
-        {images : 'images/projectTwo.png'},
-        {images : 'images/projectThere.png'}
-    ]
-    $scope.goImages = function(projectList){
-        if(projectList.images === 'images/projectOne.png'){
-            window.location.href = 'https://www.huayingdai.net/'
-        }else if(projectList.images === 'images/projectTwo.png'){
-            window.location.href = 'http://www.huayingbaolicai.com/'
-        }
-        else if(projectList.images === 'images/projectThere.png'){
-            window.location.href = 'https://www.xian62.com/'
-        }
-    };
-});
+//     $scope.projectLists =[
+//         {images : 'images/projectOne.png'},
+//         {images : 'images/projectTwo.png'},
+//         {images : 'images/projectThere.png'}
+//     ]
+//     $scope.goImages = function(projectList){
+//         if(projectList.images === 'images/projectOne.png'){
+//             window.location.href = 'https://www.huayingdai.net/'
+//         }else if(projectList.images === 'images/projectTwo.png'){
+//             window.location.href = 'http://www.huayingbaolicai.com/'
+//         }
+//         else if(projectList.images === 'images/projectThere.png'){
+//             window.location.href = 'https://www.xian62.com/'
+//         }
+//     };
+// });
 
 //个人资料
 App.controller('personalSize', function ($scope) {
