@@ -19,7 +19,7 @@
 	<div class="homeMain personal">
 		<h5>基本信息</h5>
 		<ul>
-			<li ng-repeat="size in personal">
+			<li ng-repeat="size in personal" repeat-done="renderFinish($index)">
 				<label>{{size.label}}</label>
 				<span>{{size.span}}</span>
 			</li>
@@ -50,8 +50,8 @@
 			<li>10.了解grunt编译流程。</li>
 			<li>11.熟练使用less预处理工具编译成css。</li>
 			<li>12.熟练使用github，将项目放入github仓库，了解github流程。</li>
-			<li>12.熟练使用angularjs1，并实现为项目。</li>
-			<li>13.了解angular-cli，实现demo。</li>
+			<li>13.熟练使用angularjs1，并实现为项目。</li>
+			<li>14.了解angular-cli，实现demo。</li>
 		</ul>
 	</div>
 	<div class="homeMain">
