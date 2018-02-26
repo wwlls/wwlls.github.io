@@ -1,0 +1,8 @@
+.technologyList ul{
+  margin: 0.25rem 0;
+}
+.technologyList ul li{
+	margin: 0 0.4375rem;
+	font-size: 0.21875rem;
+	line-height: 0.4375rem;
+}

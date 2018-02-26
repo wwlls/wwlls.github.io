@@ -1,0 +1,12 @@
+.share{
+	margin: 0 0.4375rem 0.3125rem;
+}
+.share h5{
+	font-size: 0.25rem;
+	color: #999;
+	line-height: 0.75rem;
+}
+.share p{
+	font-size: 0.1875rem;
+	line-height: 0.375rem;
+}

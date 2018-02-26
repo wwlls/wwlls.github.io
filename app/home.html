@@ -1,23 +1,8 @@
-<!-- <div ng-controller="Carousel" class="banner">
-	<link rel="stylesheet" type="text/css" href="styles/common/banner.css">
-  <carousel interval="myInterval" no-wrap="noWrapSlides">
-    <slide ng-repeat="slide in slides" active="slide.active">
-      <img ng-src="{{slide.image}}" style="margin:auto;">
-    </slide>
-  </carousel>
-  <div class="project">
-		<ul>
-			<li ng-repeat="projectList in projectLists">
-				<a href="javascript:;" ng-click="goImages(projectList)">
-					<img ng-src="{{projectList.images}}">
-				</a>
-			</li>
-		</ul>
-	</div>
-</div> -->
-<div  class="home" ng-controller="personalSize">
+<div  class="home concant" ng-controller="personalSize">
 	<div class="homeMain personal">
-		<h5>基本信息</h5>
+		<div ng-controller="Information">
+			<div ng-include="'components/common/title.html'"></div>
+		</div>
 		<ul>
 			<li ng-repeat="size in personal" repeat-done="renderFinish($index)">
 				<label>{{size.label}}</label>
@@ -27,7 +12,9 @@
 	</div>
 
 	<div class="homeMain">
-		<h5>教育经历</h5>
+		<div ng-controller="Education">
+			<div ng-include="'components/common/title.html'"></div>
+		</div>
 		<ul>
 			<li ng-repeat="size in education">
 				<label>{{size.label}}</label>
@@ -36,7 +23,9 @@
 		</ul>
 	</div>
 	<div class="homeMain">
-		<h5>自我描述</h5>
+		<div ng-controller="Self">
+			<div ng-include="'components/common/title.html'"></div>
+		</div>
 		<ul>
 			<li>1.熟练使用rem，百分比，rem实现移动端、pc端响应式布局。</li>
 			<li>2.熟练使用html5+css3.0新标签新属性实现页面布局与效果。</li>
@@ -55,7 +44,9 @@
 		</ul>
 	</div>
 	<div class="homeMain">
-		<h5>爱好</h5>
+		<div ng-controller="Hobby">
+			<div ng-include="'components/common/title.html'"></div>
+		</div>
 		<ul>
 			<li>1.喜欢打篮球，酷爱看NBA。</li>
 			<li>2.喜欢打电竞游戏（团队协作）。</li>
